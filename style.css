@@ -33,6 +33,25 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 a { color: inherit; text-decoration: none; }
 button { border: none; background: none; cursor: pointer; font: inherit; }
 
+/* --- Real Images --- */
+.img-real {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.img-real--card    { height: 804px; }
+.img-real--tall    { height: 1283px; }
+.img-real--full    { height: 1207px; }
+.hero-image img    { width: 100%; height: 100%; object-fit: cover; }
+.footer__image img { width: 100%; height: 500px; object-fit: cover; }
+
+@media (max-width: 900px) {
+  .img-real--card { height: 400px; }
+  .img-real--tall { height: 500px; }
+  .img-real--full { height: 500px; }
+  .footer__image img { height: 350px; }
+}
+
 /* --- Image Placeholders --- */
 .img-ph {
   background: var(--bg-mid);
